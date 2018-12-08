@@ -69,7 +69,32 @@ h1,h2,h3,h4,h5,h6{
 }
 
 p{
-  font-family:Open Sans;
+  font-family: Lora;
+  color: #777;
+  font-size: 24px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #ababab;
+  border-left: 5px solid #eee;
+  padding-left: 10px;
+}
+
+.caption {
+  font-size: 16px;
+  font-style: italic;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #ababab;
+}
+
+.subheader{
+  font-family: Open Sans;
+  color: #fff;
 }
 
 footer {
@@ -90,9 +115,9 @@ footer .copyright {
 header.mainhead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../images/buildings.jpg");
   background-position: center center;
   background-size: cover;
+  margin-bottom: 50px
 }
 
 header.mainhead hr {
@@ -104,38 +129,123 @@ header.mainhead hr {
 }
 
 header.mainhead h1 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 header.mainhead p {
   font-weight: 300;
 }
 
+header.mainhead .post-header{
+  color: #fff;
+}
+
+header.mainhead h1{
+  font-size: 35px;
+}
+
+header.mainhead .post-header .sub-header {
+  font-size: 24px;
+  margin: 20px 0 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header.mainhead .post-header .post-author
+header.mainhead .post-header .sub-header{
+  padding: 200px 0 150px;
+  line-height: 1.1;
+  display: block;
+}
+
+header.mainhead .post-header .post-author a {
+  color: #fff;
+}
+
+
+
+
+
 @media (min-width: 768px) {
   header.mainhead p {
     font-size: 1.5rem;
   }
+
+  p {
+    font-size: 20px;
+  }
+
+  header.mainHead .post-header h1 {
+    font-size: 45px;
+  }
+  header.mainHead .post-header .sub-header {
+    font-size: 30px;
+  }
+
+  header.mainhead .post-header{
+  padding: 50px 0 200px;
+  color: #fff;
 }
+}
+
+
+
+
 
 @media (min-width: 992px) {
   header.mainhead {
     height: 60vh;
     min-height: 650px;
-    padding-top: 0;
+    padding-top: 0vh;
     padding-bottom: 0;
     margin-bottom: 50px;
   }
   header.mainhead h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
+
+  header.mainhead .post-header h1 {
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  header.posthead {
+    padding: 200px;
+  }
+
+  header.mainhead .post-header{
+  padding: 150px 0 200px;
+  color: #fff;
 }
+}
+
+
+
+
+
 
 /* Change header font */
 @media (min-width: 1200px) {
   header.mainhead h1 {
     font-size: 6rem;
   }
+
+  header.mainhead .post-header h1 {
+    font-size: 55px;
+  }
+
+  header.mainhead .post-header{
+  padding: 150px 0 200px;
+  color: #fff;
 }
+}
+
+
+
+
+
 
 /* Set navMenu color and style */
 #navMenu {
@@ -232,6 +342,95 @@ header.mainhead p {
   }
 }
 
+.floating-label-form-group {
+  position: relative;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  font-size: 1.5em;
+  position: relative;
+  z-index: 1;
+  padding-right: 0;
+  padding-left: 0;
+  resize: none;
+  border: none;
+  border-radius: 0;
+  background: none;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.floating-label-form-group label {
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  position: relative;
+  z-index: 0;
+  top: 2em;
+  display: block;
+  margin: 0;
+  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+  transition: top 0.3s ease, opacity 0.3s ease;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0;
+}
+
+.floating-label-form-group:not(:first-child) {
+  padding-left: 14px;
+  border-left: 1px solid #e9ecef;
+}
+
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+  color: #18BC9C;
+}
+
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #e9ecef;
+}
+
+.btn {
+  border-width: 1px;
+  color: #000;
+}
+
+.bg-primary {
+  background-color: #000 !important;
+  font-style: 'Roboto';
+}
+
+.bg-secondary {
+  background-color: #777 !important;
+}
+
+.btn-primary {
+  background-color: #fff;
+  border-color: #777;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #777;
+  border-color: #777;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  border-color: #777;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #fff;
+  border-color: #777;
+}
+
+
+
 .demopadding {
   margin:0px auto;
   width:140px;
@@ -299,6 +498,5 @@ header.mainhead p {
 
 .about-notes{
   font-family: Lora;
-  font-size: 12px;
   color: #777;
 }
