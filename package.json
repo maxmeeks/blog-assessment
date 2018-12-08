@@ -1,0 +1,27 @@
+{
+  "name": "c2project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Meekhoff",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxmeeks/blog-assessment.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "fontawesome": "^4.7.2",
+    "gulp-git": "^2.8.0",
+    "gulp-run-sequence": "^0.3.2",
+    "jquery": "^3.3.1"
+  }
+}
