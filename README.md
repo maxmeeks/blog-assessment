@@ -1,0 +1,2 @@
+# blog-assessment
+Static Blog
